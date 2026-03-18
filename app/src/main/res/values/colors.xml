@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_dark">#0F0F0F</color>
+    <color name="bg_header">#161616</color>
+    <color name="bg_card">#1A1A1A</color>
+    <color name="accent_gold">#FFB300</color>
+    <color name="accent_gold_dark">#CC8C00</color>
+    <color name="text_primary">#EEEEEE</color>
+    <color name="text_secondary">#888888</color>
+    <color name="divider">#2A2A2A</color>
+    <color name="dot_green">#4CAF50</color>
+    <color name="dot_red">#F44336</color>
+</resources>

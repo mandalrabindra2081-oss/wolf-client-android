@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HUD MODULES"
+            android:textColor="@color/accent_gold"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.15"
+            android:paddingStart="4dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- FPS -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+            android:background="@drawable/card_bg" android:gravity="center_vertical"
+            android:paddingStart="16dp" android:paddingEnd="16dp" android:layout_marginBottom="8dp" android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="FPS Counter" android:textColor="@color/text_primary" android:textSize="14sp" android:textStyle="bold"/>
+            <Switch android:id="@+id/switchFps" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Coordinates -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+            android:background="@drawable/card_bg" android:gravity="center_vertical"
+            android:paddingStart="16dp" android:paddingEnd="16dp" android:layout_marginBottom="8dp" android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="Coordinates" android:textColor="@color/text_primary" android:textSize="14sp" android:textStyle="bold"/>
+            <Switch android:id="@+id/switchCoords" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Keystrokes -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+            android:background="@drawable/card_bg" android:gravity="center_vertical"
+            android:paddingStart="16dp" android:paddingEnd="16dp" android:layout_marginBottom="8dp" android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="Keystrokes" android:textColor="@color/text_primary" android:textSize="14sp" android:textStyle="bold"/>
+            <Switch android:id="@+id/switchKeystrokes" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- CPS -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+            android:background="@drawable/card_bg" android:gravity="center_vertical"
+            android:paddingStart="16dp" android:paddingEnd="16dp" android:layout_marginBottom="8dp" android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="CPS Counter" android:textColor="@color/text_primary" android:textSize="14sp" android:textStyle="bold"/>
+            <Switch android:id="@+id/switchCps" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Ping -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+            android:background="@drawable/card_bg" android:gravity="center_vertical"
+            android:paddingStart="16dp" android:paddingEnd="16dp" android:layout_marginBottom="8dp" android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="Ping Display" android:textColor="@color/text_primary" android:textSize="14sp" android:textStyle="bold"/>
+            <Switch android:id="@+id/switchPing" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Armor HUD -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+            android:background="@drawable/card_bg" android:gravity="center_vertical"
+            android:paddingStart="16dp" android:paddingEnd="16dp" android:layout_marginBottom="8dp" android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="Armor HUD" android:textColor="@color/text_primary" android:textSize="14sp" android:textStyle="bold"/>
+            <Switch android:id="@+id/switchArmorHud" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/divider" android:layout_marginTop="4dp" android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="INVENTORY FEATURES" android:textColor="@color/accent_gold"
+            android:textSize="11sp" android:textStyle="bold" android:letterSpacing="0.15"
+            android:paddingStart="4dp" android:layout_marginBottom="8dp" />
+
+        <!-- Auto Totem -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+            android:background="@drawable/card_bg" android:gravity="center_vertical"
+            android:paddingStart="16dp" android:paddingEnd="16dp" android:layout_marginBottom="8dp" android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="Auto Totem" android:textColor="@color/text_primary" android:textSize="14sp" android:textStyle="bold"/>
+            <Switch android:id="@+id/switchAutoTotem" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Offhand Slot -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+            android:background="@drawable/card_bg" android:gravity="center_vertical"
+            android:paddingStart="16dp" android:paddingEnd="16dp" android:layout_marginBottom="8dp" android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="Offhand Slot" android:textColor="@color/text_primary" android:textSize="14sp" android:textStyle="bold"/>
+            <Switch android:id="@+id/switchOffhand" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
