@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_main">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@color/bg_header">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_wolf"
+            android:contentDescription="Logo" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wolf Client"
+            android:textColor="@color/accent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLaunchMc"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="Launch MC"
+            android:textColor="@color/bg_main"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="@drawable/btn_accent"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp" />
+    </LinearLayout>
+
+    <!-- Search bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@color/bg_header">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_search"
+            android:alpha="0.5" />
+
+        <EditText
+            android:id="@+id/searchInput"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Search modules..."
+            android:textColorHint="#555555"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:background="@null"
+            android:paddingStart="10dp"
+            android:singleLine="true"
+            android:imeOptions="actionSearch" />
+    </LinearLayout>
+
+    <!-- Category tabs -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:scrollbars="none"
+        android:background="@color/bg_header">
+
+        <LinearLayout
+            android:id="@+id/categoryTabRow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+    </HorizontalScrollView>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+    <!-- Module list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/moduleList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingTop="4dp"
+        android:paddingBottom="80dp" />
+
+    <!-- Bottom bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/bg_card"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Enable Overlay"
+            android:textColor="@color/accent"
+            android:textSize="13sp"
+            android:background="@drawable/btn_outline" />
+    </LinearLayout>
+
+</LinearLayout>

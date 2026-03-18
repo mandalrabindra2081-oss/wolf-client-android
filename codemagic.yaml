@@ -1,0 +1,13 @@
+workflows:
+  android-debug-build:
+    name: Wolf Client Debug Build
+    max_build_duration: 30
+    environment:
+      java: 17
+    scripts:
+      - name: Build debug APK
+        script: |
+          echo "sdk.dir=$ANDROID_HOME" > local.properties
+          gradle assembleDebug
+    artifacts:
+      - app/build/outputs/apk/debug/*.apk
